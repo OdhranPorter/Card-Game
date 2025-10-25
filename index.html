@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HighLow Card Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>HighLow Card Game</h1>
+    <div id="game-info">
+      <p>Round: <span id="round-number">0</span></p>
+      <p>Score: <span id="score">0</span></p>
+    </div>
+    <div class="game-container">
+      <img class="card" id="current-card" src="images/back.png" alt="Current Card">
+      <div class="buttons">
+        <button onclick="guess('higher')">Higher</button>
+        <button onclick="guess('lower')">Lower</button>
+      </div>
+    </div>
+    <div id="result"></div>
+    <div id="history">
+      <h2>Round History</h2>
+      <ul id="history-list"></ul>
+    </div>
+    <div id="controls">
+      <button id="restart-btn" onclick="restartGame()">Restart Game</button>
+      <button id="quit-btn" onclick="quitGame()">Quit Game</button>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
